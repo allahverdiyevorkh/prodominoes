@@ -19,10 +19,7 @@
       font-family: Inter, system-ui, -apple-system, sans-serif;
       color: #F2EFE8;
     }
-    .card {
-      width: min(420px, 100%);
-      text-align: center;
-    }
+    .card { width: min(420px, 100%); text-align: center; }
     img.icon {
       width: 112px; height: 112px;
       border-radius: 26px;
@@ -55,6 +52,13 @@
       padding: 16px 18px;
       border-radius: 14px;
     }
+    a.btn.alt {
+      margin-top: 12px;
+      background: transparent;
+      color: #E4BE6A;
+      border: 1.5px solid rgba(228,190,106,.55);
+      font-size: 17px;
+    }
     a.btn:active { transform: scale(.98); }
     ol {
       text-align: left;
@@ -76,15 +80,16 @@
   <div class="card">
     <img class="icon" src="icon.png" alt="ProDominoes" />
     <h1>PRODOMINOES</h1>
-    <p class="sub">Домино для Android. Нажмите кнопку — файл скачается сам.</p>
-    <a class="btn" href="ProDominoes.apk" download="ProDominoes.apk">Скачать APK</a>
+    <p class="sub">Нажмите кнопку — скачивание начнётся сразу.</p>
+    <a class="btn" href="https://github.com/allahverdiyevorkh/prodominoes/releases/download/v5/ProDominoes.apk">Скачать APK</a>
+    <a class="btn alt" href="https://github.com/allahverdiyevorkh/prodominoes/releases/download/v5/ProDominoes-backup.zip">Скачать архив</a>
     <ol>
-      <li>Откройте ссылку на телефоне Samsung / Android.</li>
-      <li>Нажмите «Скачать APK».</li>
+      <li>Откройте ссылку на телефоне Android.</li>
+      <li>Нажмите «Скачать APK» — файл качается сам.</li>
       <li>Если спросит «неизвестный источник» — разрешите.</li>
-      <li>Откройте файл и установите.</li>
+      <li>Если не ставится — удалите старую версию и поставьте заново.</li>
     </ol>
-    <p class="note">Только Android. На iPhone играйте через браузер — APK туда не ставится.</p>
+    <p class="note">Только Android. Пароля на входе нет. Браузер: prodominoes-server-production.up.railway.app</p>
   </div>
 </body>
 </html>
